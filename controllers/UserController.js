@@ -159,7 +159,7 @@ class UserController {
         users.forEach(dataUser => {
             let user = new User();
             user.loadFromJSON(dataUser);
-            this.addLine(dataUser);
+            this.addLine(user);
         })
     }
 
